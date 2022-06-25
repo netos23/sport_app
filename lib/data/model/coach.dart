@@ -1,4 +1,8 @@
-class Coach {
+import 'package:sport_app/data/utils.dart';
+
+class Coach implements IModel<int> {
+
+  @override
   final int? id;
   final String name;
   final String surname;

@@ -1,4 +1,7 @@
-class Competition {
+import 'package:sport_app/data/utils.dart';
+
+class Competition implements IModel<int> {
+  @override
   final int? id;
   final int name;
   final DateTime start;

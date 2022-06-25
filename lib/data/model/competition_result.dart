@@ -1,4 +1,7 @@
-class CompetitionResultTable {
+import 'package:sport_app/data/utils.dart';
+
+class CompetitionResultTable implements IModel<int> {
+  @override
   final int? id;
   final int competitionId;
   final int sportsmenId;
