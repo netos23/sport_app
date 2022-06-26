@@ -7,7 +7,7 @@ part 'sportsman.freezed.dart';
 @freezed
 class Sportsman with _$Sportsman {
   const factory Sportsman({
-    int? id,
+    required int id,
     required String name,
     required String surname,
     required String patronymic,

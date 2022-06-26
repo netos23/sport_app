@@ -20,7 +20,7 @@ Sportsman _$SportsmanFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Sportsman {
-  int? get id => throw _privateConstructorUsedError;
+  int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get surname => throw _privateConstructorUsedError;
   String get patronymic => throw _privateConstructorUsedError;
@@ -39,7 +39,7 @@ abstract class $SportsmanCopyWith<$Res> {
   factory $SportsmanCopyWith(Sportsman value, $Res Function(Sportsman) then) =
       _$SportsmanCopyWithImpl<$Res>;
   $Res call(
-      {int? id,
+      {int id,
       String name,
       String surname,
       String patronymic,
@@ -70,7 +70,7 @@ class _$SportsmanCopyWithImpl<$Res> implements $SportsmanCopyWith<$Res> {
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -106,7 +106,7 @@ abstract class _$$_SportsmanCopyWith<$Res> implements $SportsmanCopyWith<$Res> {
       __$$_SportsmanCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int? id,
+      {int id,
       String name,
       String surname,
       String patronymic,
@@ -139,7 +139,7 @@ class __$$_SportsmanCopyWithImpl<$Res> extends _$SportsmanCopyWithImpl<$Res>
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -172,7 +172,7 @@ class __$$_SportsmanCopyWithImpl<$Res> extends _$SportsmanCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_Sportsman implements _Sportsman {
   const _$_Sportsman(
-      {this.id,
+      {required this.id,
       required this.name,
       required this.surname,
       required this.patronymic,
@@ -184,7 +184,7 @@ class _$_Sportsman implements _Sportsman {
       _$$_SportsmanFromJson(json);
 
   @override
-  final int? id;
+  final int id;
   @override
   final String name;
   @override
@@ -243,7 +243,7 @@ class _$_Sportsman implements _Sportsman {
 
 abstract class _Sportsman implements Sportsman {
   const factory _Sportsman(
-      {final int? id,
+      {required final int id,
       required final String name,
       required final String surname,
       required final String patronymic,
@@ -255,7 +255,7 @@ abstract class _Sportsman implements Sportsman {
       _$_Sportsman.fromJson;
 
   @override
-  int? get id => throw _privateConstructorUsedError;
+  int get id => throw _privateConstructorUsedError;
   @override
   String get name => throw _privateConstructorUsedError;
   @override

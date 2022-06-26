@@ -39,6 +39,8 @@ flutter:
   assets:
     - assets/migration/init.sql
     - assets/migration/sportsmen_test.sql
+    - assets/pictures/sportsmen.jpeg
+    - assets/pictures/cometition.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

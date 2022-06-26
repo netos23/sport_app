@@ -5,6 +5,6 @@ CREATE TABLE IF NOT EXISTS sportsmen
     surname    text    not null,
     patronymic text    not null,
     category   integer not null,
-    birthday   integer,
+    birthday   integer not null,
     sport      text
 );

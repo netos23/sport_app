@@ -7,7 +7,7 @@ part of 'sportsman.dart';
 // **************************************************************************
 
 _$_Sportsman _$$_SportsmanFromJson(Map<String, dynamic> json) => _$_Sportsman(
-      id: json['id'] as int?,
+      id: json['id'] as int,
       name: json['name'] as String,
       surname: json['surname'] as String,
       patronymic: json['patronymic'] as String,
