@@ -62,6 +62,8 @@ void main() {
       surname: 'Смирнова',
       patronymic: 'Валерьевна',
       category: 2,
+      sport: '',
+      birthday: 0,
     ));
 
     final sportsmenFromDb = await repository.getById(sportsmen.id!);
@@ -78,18 +80,24 @@ void main() {
         surname: 'Смирнова',
         patronymic: 'Валерьевна',
         category: 2,
+        sport: '',
+        birthday: 0,
       ),
       const Sportsman(
         name: 'Маша',
         surname: 'Морозова',
         patronymic: 'Валерьевна',
         category: 2,
+        sport: '',
+        birthday: 0,
       ),
       const Sportsman(
         name: 'Катя',
         surname: 'Смирнова',
         patronymic: 'Валерьевна',
         category: 4,
+        sport: '',
+        birthday: 0,
       ),
     ];
 
@@ -113,7 +121,7 @@ void main() {
     }
 
     final emptyList = await repository.getAll();
-    expect(emptyList.isEmpty,  true);
+    expect(emptyList.isEmpty, true);
   });
 
   test('test delete all by id', () async {
@@ -125,14 +133,14 @@ void main() {
     }
 
     final emptyList = await repository.getAll();
-    expect(emptyList.isEmpty,  true);
+    expect(emptyList.isEmpty, true);
   });
 
   test('test delete all', () async {
     await repository.deleteAll();
 
     final emptyList = await repository.getAll();
-    expect(emptyList.isEmpty,  true);
+    expect(emptyList.isEmpty, true);
   });
 
   tearDown(() async {

@@ -1,19 +1,18 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:sport_app/data/utils.dart';
-
-part 'sportsman.freezed.dart';
 
 part 'sportsman.g.dart';
 
+part 'sportsman.freezed.dart';
+
 @freezed
-class Sportsman with _$Sportsman implements IModel<int> {
+class Sportsman with _$Sportsman {
   const factory Sportsman({
     int? id,
     required String name,
     required String surname,
     required String patronymic,
-    required int category,
-    required int birthday,
+    required String category,
+    required DateTime birthday,
     required String sport,
   }) = _Sportsman;
 

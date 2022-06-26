@@ -11,8 +11,8 @@ _$_Sportsman _$$_SportsmanFromJson(Map<String, dynamic> json) => _$_Sportsman(
       name: json['name'] as String,
       surname: json['surname'] as String,
       patronymic: json['patronymic'] as String,
-      category: json['category'] as int,
-      birthday: json['birthday'] as int,
+      category: json['category'] as String,
+      birthday: DateTime.parse(json['birthday'] as String),
       sport: json['sport'] as String,
     );
 
@@ -23,6 +23,6 @@ Map<String, dynamic> _$$_SportsmanToJson(_$_Sportsman instance) =>
       'surname': instance.surname,
       'patronymic': instance.patronymic,
       'category': instance.category,
-      'birthday': instance.birthday,
+      'birthday': instance.birthday.toIso8601String(),
       'sport': instance.sport,
     };

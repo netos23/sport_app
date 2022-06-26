@@ -24,8 +24,8 @@ mixin _$Sportsman {
   String get name => throw _privateConstructorUsedError;
   String get surname => throw _privateConstructorUsedError;
   String get patronymic => throw _privateConstructorUsedError;
-  int get category => throw _privateConstructorUsedError;
-  int get birthday => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
+  DateTime get birthday => throw _privateConstructorUsedError;
   String get sport => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -43,8 +43,8 @@ abstract class $SportsmanCopyWith<$Res> {
       String name,
       String surname,
       String patronymic,
-      int category,
-      int birthday,
+      String category,
+      DateTime birthday,
       String sport});
 }
 
@@ -86,11 +86,11 @@ class _$SportsmanCopyWithImpl<$Res> implements $SportsmanCopyWith<$Res> {
       category: category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       birthday: birthday == freezed
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
-              as int,
+              as DateTime,
       sport: sport == freezed
           ? _value.sport
           : sport // ignore: cast_nullable_to_non_nullable
@@ -110,8 +110,8 @@ abstract class _$$_SportsmanCopyWith<$Res> implements $SportsmanCopyWith<$Res> {
       String name,
       String surname,
       String patronymic,
-      int category,
-      int birthday,
+      String category,
+      DateTime birthday,
       String sport});
 }
 
@@ -155,11 +155,11 @@ class __$$_SportsmanCopyWithImpl<$Res> extends _$SportsmanCopyWithImpl<$Res>
       category: category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       birthday: birthday == freezed
           ? _value.birthday
           : birthday // ignore: cast_nullable_to_non_nullable
-              as int,
+              as DateTime,
       sport: sport == freezed
           ? _value.sport
           : sport // ignore: cast_nullable_to_non_nullable
@@ -192,9 +192,9 @@ class _$_Sportsman implements _Sportsman {
   @override
   final String patronymic;
   @override
-  final int category;
+  final String category;
   @override
-  final int birthday;
+  final DateTime birthday;
   @override
   final String sport;
 
@@ -247,8 +247,8 @@ abstract class _Sportsman implements Sportsman {
       required final String name,
       required final String surname,
       required final String patronymic,
-      required final int category,
-      required final int birthday,
+      required final String category,
+      required final DateTime birthday,
       required final String sport}) = _$_Sportsman;
 
   factory _Sportsman.fromJson(Map<String, dynamic> json) =
@@ -263,9 +263,9 @@ abstract class _Sportsman implements Sportsman {
   @override
   String get patronymic => throw _privateConstructorUsedError;
   @override
-  int get category => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
   @override
-  int get birthday => throw _privateConstructorUsedError;
+  DateTime get birthday => throw _privateConstructorUsedError;
   @override
   String get sport => throw _privateConstructorUsedError;
   @override
