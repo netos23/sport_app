@@ -18,9 +18,9 @@ void main() {
   late Database db;
 
   setUp(() async {
-    final migrations = await rootBundle.loadString('assets/init.sql');
+    final migrations = await rootBundle.loadString('assets/migration/init.sql');
     final sportsmenData = await rootBundle.loadString(
-      'assets/sportsmen_test.sql',
+      'assets/migration/sportsmen_test.sql',
     );
 
     db = await databaseFactoryFfi.openDatabase(
