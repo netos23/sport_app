@@ -1,1 +1,1 @@
-const sportsmen = 'sports_men';
+const sportsman = 'sportsmen';

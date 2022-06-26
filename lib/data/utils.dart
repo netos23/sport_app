@@ -5,7 +5,7 @@ abstract class IModel<ID> {
 abstract class IAsyncCrudRepository<ID, T extends IModel<ID>> {
   Future<T> add(T val);
 
-  Future<void> addAll(T val);
+  Future<void> addAll(Iterable<T> val);
 
   Future<void> update(T val);
 
@@ -13,11 +13,11 @@ abstract class IAsyncCrudRepository<ID, T extends IModel<ID>> {
 
   Future<T?> getById(ID id);
 
-  Stream<T> getAll();
+  Future<Iterable<T>> getAll();
 
-  Future<T?> delete(T val);
+  Future<bool> delete(T val);
 
-  Future<T?> deleteById(ID id);
+  Future<bool> deleteById(ID id);
 
-  Stream<T> deleteAll();
+  Future<void> deleteAll();
 }
